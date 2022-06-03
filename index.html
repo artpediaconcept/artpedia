@@ -89,7 +89,8 @@
         </div>
     </section>
 
-    <section id="presentation" class="latest-albums-area section-padding-100">
+    <section id="presentation" class="latest-albums-area section-padding-100"  style="background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);" >
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -124,10 +125,12 @@
                     <div class="featured-artist-content">
                         <!-- Section Heading -->
                         <div class="section-heading white text-left mb-30">
-                            <p>ARTPEDIA</p>
+                            <br>
                             <h2>Marketplace</h2>
                         </div>
                         <h2 style="color:white;">Discover, find and sell extraordinary beats ,sets and more .. 👽 </h2>
+                        <br><br>
+                        <a href="" class="btn oneMusic-btn">Start selling</a>
                         <br>
                         <br><br><br><br><br><br>
                     </div>
@@ -138,26 +141,19 @@
     <!-- ##### Featured Artist Area End ##### -->
 
     <!-- ##### Miscellaneous Area Start ##### -->
-    <section class="miscellaneous-area section-padding-100-0">
+    <section class="miscellaneous-area section-padding-100-0" style="background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading style-2">
-                        <h2>drop and get premium instrumentals</h2>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <!-- ***** Weeks Top ***** -->
                 <div class="col-12 col-lg-4">
-                    <div class="weeks-top-area mb-100">
+                    <div class="weeks-top-area mb-100" style="background-color: #f5f9fa; ">
                         <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
-                            <p>MARKETPLACE</p>
                             <h2>This week’s top</h2>
                         </div>
-
+                        <div id="market" class="albums-slideshow owl-carousel">
                         <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="100ms">
+                        <div  class="single-top-item d-flex wow fadeInUp" data-wow-delay="100ms">
                             <div class="thumbnail">
                                 <img src="https://i.ytimg.com/an_webp/m2vHALiSl5A/mqdefault_6s.webp?du=3000&sqp=CKDa3ZQG&rs=AOn4CLDHQB9aFUaDIbJZ9rBn6a-hiUnaoA" alt="">
                             </div>
@@ -168,7 +164,7 @@
                         </div>
 
                         <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="150ms">
+                        <div  class="single-top-item d-flex wow fadeInUp" data-wow-delay="150ms">
                             <div class="thumbnail">
                                 <img src="https://i.ytimg.com/vi/_FhxAGiM5so/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB4dHX0SqNknb20ZIpSa7o3ug1ArQ" alt="">
                             </div>
@@ -177,18 +173,16 @@
                                 <p>Gore ocean</p>
                             </div>
                         </div>
-                        
+                    </div>
                     </div>
                 </div>
-
                 <!-- ***** New Hits Songs ***** -->
                 <div class="col-12 col-lg-4">
                     <div class="new-hits-area mb-100">
                         <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
-                            <p>MARKETPLACE</p>
                             <h2>New Hits</h2>
                         </div>
-
+                        <div id="marketm" class="albums-slideshow owl-carousel">
                         <!-- Single Top Item -->
                         <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="100ms">
                             <div class="first-part d-flex align-items-center">
@@ -253,13 +247,13 @@
                             </audio>
                         </div>
                     </div>
+                    </div>
                 </div>
 
                 <!-- ***** Popular Artists ***** -->
                 <div class="col-12 col-lg-4">
                     <div class="popular-artists-area mb-100">
                         <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
-                            <p>MARKETPLACE</p>
                             <h2>Popular Artist</h2>
                         </div>
 
@@ -278,9 +272,28 @@
             </div>
         </div>
     </section>
+    <script>
+        var win = window,
+        doc = document,
+        docElem = doc.documentElement,
+        body = doc.getElementsByTagName('body')[0],
+        x = win.innerWidth || docElem.clientWidth || body.clientWidth;
+        if(x > 479) {
+            document.getElementById("market").classList.remove("albums-slideshow");
+            document.getElementById("market").classList.remove("owl-carousel");
+            document.getElementById("marketm").classList.remove("albums-slideshow");
+            document.getElementById("marketm").classList.remove("owl-carousel");
+        }else{
+            document.getElementById("market").classList.add("albums-slideshow");
+            document.getElementById("market").classList.add("owl-carousel");
+            document.getElementById("marketm").classList.add("albums-slideshow");
+            document.getElementById("marketm").classList.add("owl-carousel");
+        }
+</script>
     <!-- ##### Miscellaneous Area End ##### -->
     <!-- ##### Buy Now Area Start ##### -->
-    <section class="oneMusic-buy-now-area has-fluid bg-gray section-padding-100">
+    <section class="oneMusic-buy-now-area has-fluid bg-gray section-padding-100"  style="background-color: #d9e4f5;
+    background-image: linear-gradient( #f5e3e6 74%, #d9e4f5 0%,315deg );">
         <div class="row">
             <div class="col-12">
                 <div class="section-heading style-2">
