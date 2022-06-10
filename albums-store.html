@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>Tracks - ARTPEDIA</title>
+    <!-- Favicon -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="albums-store.html">TRACKS</a></li>
+                                    <li><a href="event.html">EVENTS</a></li>
+                                    <li><a href="blog.html">BLOG</a></li>
+                                </ul>
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <div class="login-register-btn mr-50">
+                                        <a href="#gtouch" id="loginBtn">GET IN TOUCH</a>
+                                    </div>
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn">
+                                        <p><span class="icon-shopping-cart"></span> <span class="quantity">0</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
+        <div class="bradcumbContent">
+            <p>See what’s new</p>
+            <h2>Explore Tracks</h2>
+        </div>
+    </section>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Album Catagory Area Start ##### -->
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="filtermenumobo" id="filtermenumobo"></div>
+            <div class="row">
+                <div class="d-flex flex-wrap align-items-center mb-70">
+                <ul class="uld" id="uld">
+                    <li><a href="#" class="item">Genre <i class="fa fa-chevron-down"></i></a>
+                      <span class="accent"></span>
+                      <ul class="drop-down">
+                        <li><div class="choice"><label for="">HIPHOP</label><input style="vertical-align:middle;margin-left:10px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                        <li><div class="choice"><label for="">R&B</label><input style="vertical-align:middle;margin-left:10px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                        <li><div class="choice"><label for="">POP</label><input style="vertical-align:middle;margin-left:10px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                        <li><div class="choice"><label for="">EDM</label><input style="vertical-align:middle;margin-left:10px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                        <li><div class="choice"><label for="">TECHNO</label><input style="vertical-align:middle;margin-left:8px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                    </ul>
+                    </li>
+                    <li><a href="#" class="item">Price <i class="fa fa-chevron-down"></i></a>
+                        <span class="accent"></span>
+                        <ul class="drop-down">
+                            <li>
+                                <div class="wwrapper">
+                                    <div class="values">
+                                      <span id="range1">
+                                        0
+                                      </span>
+                                      <span> &dash; </span>
+                                      <span id="range2">
+                                        999
+                                      </span>
+                                    </div>
+                                    <div class="ccontainer">
+                                      <div class="slider-track"></div>
+                                      <input type="range" min="0" max="999" value="30" id="slider-1" oninput="slideOne()">
+                                      <input type="range" min="0" max="999" value="70" id="slider-2" oninput="slideTwo()">
+                                    </div>
+                                </div>
+                            <li>
+                      </ul>
+                      </li>
+                    <li><a href="#" class="item">Mood <i class="fa fa-chevron-down"></i></a>
+                        <span class="accent"></span>
+                        <ul class="drop-down">
+                          <li><div class="choice"><label for="">Calm</label><input style="vertical-align:middle;margin-left:10px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                          <li><div class="choice"><label for="">Angry</label><input style="vertical-align:middle;margin-left:10px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                          <li><div class="choice"><label for="">Sad</label><input style="vertical-align:middle;margin-left:10px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                          <li><div class="choice"><label for="">Happy</label><input style="vertical-align:middle;margin-left:10px;margin-top:1px ;"  class="form-check-input" type="checkbox" name="" id=""></div></li>
+                      </ul>
+                    </li>
+                    <li><a href="#" class="item">BPM <i class="fa fa-chevron-down"></i></a>
+                        <span class="accent"></span>
+                        <ul class="drop-down">
+                            <li>
+                                <div class="wwrapper">
+                                    <div class="values">
+                                      <span id="range11">
+                                        50
+                                      </span>
+                                      <span> &dash; </span>
+                                      <span id="range22">
+                                        300
+                                      </span>
+                                    </div>
+                                    <div class="ccontainer">
+                                      <div class="slider-trackk"></div>
+                                      <input type="range" min="50" max="300" value="30" id="slider-11" oninput="slideOnee()">
+                                      <input type="range" min="50" max="300" value="70" id="slider-22" oninput="slideTwoo()">
+                                    </div>
+                                </div>
+                            <li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img class="search-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                        <input class="search" placeholder="Search" type="text" >
+                        <img class="clear-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxLjk3NiA1MS45NzYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxLjk3NiA1MS45NzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPGc+Cgk8cGF0aCBkPSJNNDQuMzczLDcuNjAzYy0xMC4xMzctMTAuMTM3LTI2LjYzMi0xMC4xMzgtMzYuNzcsMGMtMTAuMTM4LDEwLjEzOC0xMC4xMzcsMjYuNjMyLDAsMzYuNzdzMjYuNjMyLDEwLjEzOCwzNi43NywwICAgQzU0LjUxLDM0LjIzNSw1NC41MSwxNy43NCw0NC4zNzMsNy42MDN6IE0zNi4yNDEsMzYuMjQxYy0wLjc4MSwwLjc4MS0yLjA0NywwLjc4MS0yLjgyOCwwbC03LjQyNS03LjQyNWwtNy43NzgsNy43NzggICBjLTAuNzgxLDAuNzgxLTIuMDQ3LDAuNzgxLTIuODI4LDBjLTAuNzgxLTAuNzgxLTAuNzgxLTIuMDQ3LDAtMi44MjhsNy43NzgtNy43NzhsLTcuNDI1LTcuNDI1Yy0wLjc4MS0wLjc4MS0wLjc4MS0yLjA0OCwwLTIuODI4ICAgYzAuNzgxLTAuNzgxLDIuMDQ3LTAuNzgxLDIuODI4LDBsNy40MjUsNy40MjVsNy4wNzEtNy4wNzFjMC43ODEtMC43ODEsMi4wNDctMC43ODEsMi44MjgsMGMwLjc4MSwwLjc4MSwwLjc4MSwyLjA0NywwLDIuODI4ICAgbC03LjA3MSw3LjA3MWw3LjQyNSw3LjQyNUMzNy4wMjIsMzQuMTk0LDM3LjAyMiwzNS40NiwzNi4yNDEsMzYuMjQxeiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />                    </li>
+                    <li ><a href="#" class="item">Sort<i class="fa fa-chevron-down"></i></a>
+                        <span class="accent"></span>
+                        <ul class="drop-down">
+                            <li><a href="">Newest</a><li>
+                            <li><a href="">Oldest</a><li>
+                            <li><a href="">Higher $</a><li>
+                            <li><a href="">Lower $</a><li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="row oneMusic-albums" style="position:fixed ;">
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item t c p">
+                    <div class="single-album">
+                        <img src="img/bg-img/a1.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item s e q">
+                    <div class="single-album">
+                        <img src="img/bg-img/a2.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item w f r">
+                    <div class="single-album">
+                        <img src="img/bg-img/a3.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item t g u">
+                    <div class="single-album">
+                        <img src="img/bg-img/a4.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item d h v">
+                    <div class="single-album">
+                        <img src="img/bg-img/a5.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item t i x">
+                    <div class="single-album">
+                        <img src="img/bg-img/a6.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item b j y">
+                    <div class="single-album">
+                        <img src="img/bg-img/a7.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item a k z">
+                    <div class="single-album">
+                        <img src="img/bg-img/a8.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album-->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item w l number">
+                    <div class="single-album">
+                        <img src="img/bg-img/a9.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item d m">
+                    <div class="single-album">
+                        <img src="img/bg-img/a10.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item t n">
+                    <div class="single-album">
+                        <img src="img/bg-img/a11.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 single-album-item b o">
+                    <div class="single-album">
+                        <img src="img/bg-img/a12.jpg" alt="">
+                        <div class="album-info">
+                            <p>15DT~100BPM</p>
+                            <a href="#">
+                                <h5>The Cure</h5>
+                            </a>
+                            <p>Esm artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Album Catagory Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                        <p>See what’s new</p>
+                        <h2>Get In Touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Tracks</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <div class="show"><img src="img/2r6D.gif" class="show" alt="" srcset="">
+        <ul class="list-categories" >
+          <li class="social"><a href=""><img src="img/core-img//Facebook.svg"  alt=""></a></li>
+          <li class="social"><a href=""><img src="img/core-img//Instagram.svg"  alt=""></a></li>
+          <li class="social"><a href=""><img src="img/core-img//Soundcloud.svg"  alt=""></a></li>
+        </ul> 
+        </div> 
+</body>
+
+</html>
